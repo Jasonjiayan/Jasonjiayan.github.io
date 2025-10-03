@@ -128,7 +128,7 @@ MathJax.Hub.Config({
 <div id="footer-container">
 <div id="footer">
 <div id="footer-text">
-Last edited  on April 5<sup>th</sup> 2023  03:59PM (Time Zone: CST). </br>
+Last updated on <span data-last-modified-date></span> (Time Zone: <span data-last-modified-tz></span>). </br>
 Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new design</a>.
 </div> <!-- <div id="footer-text"> -->
 </div> <!-- <div id="footer"> -->
@@ -136,25 +136,7 @@ Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">je
 </div> <!-- <div id="layout-content-container"> -->
 </div> <!--- <div id="layout"> --->
 </div> <!--- <div id="main-container"> --->
-<script>
-function openNav() {
-    if (window.innerWidth <= 1200) {
-        document.getElementById("layout-menu").style.width = "280px";
-        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
-        document.getElementById("layout-content-container").style.position = "fixed";
-    }
-}
-function closeNav() {
-    if (window.innerWidth <= 1200) {
-        document.getElementById("layout-menu").style.width = "0";
-        document.getElementById("layout-content-container").style.position = "static";
-        document.getElementById("layout-content-container").style.marginLeft = "0px";
-        setInterval(
-            function(){ location.reload() },
-            500
-        );
-    }
-}
-</script>
+<script src="site-config.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
