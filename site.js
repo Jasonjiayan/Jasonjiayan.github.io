@@ -91,8 +91,10 @@
     }
 
     var script = document.createElement('script');
+    script.id = 'clustrmaps';
     script.src = src;
-    script.async = true;
+    script.type = 'text/javascript';
+    script.async = false;
     script.referrerPolicy = 'no-referrer-when-downgrade';
     container.appendChild(script);
   }
